@@ -1,6 +1,5 @@
 import { loadData } from '../actions/loadData';
 
-
 const initialState = {
   isReady: false,
   game: {
