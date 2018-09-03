@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { Provider } from 'react-redux';
-import { Container } from 'native-base';
-import { store } from '../store/index';
+import { store } from '../store/store';
 import RockPaperScissorsSimpleApp from '../RockPaperScissorsSimpleApp';
 
 /** Configuration component, responsible for initializing data, putting app inside a Container
@@ -15,9 +14,7 @@ export default class Setup extends Component {
   render() {
     return (
       <Provider store={store}>
-        <Container>
-          <RockPaperScissorsSimpleApp />
-        </Container>
+        <RockPaperScissorsSimpleApp />
       </Provider>
     );
   }

@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { View } from 'react-native';
 import { Spinner, Text } from 'native-base';
-import WelcomeScreen from './screens/Welcome/WelcomeScreen';
+import { GameStackNavigator } from './navigations/GameStackNavigator';
 import { connect } from 'react-redux';
 
 
@@ -40,7 +40,7 @@ class RockPaperScissorsSimpleApp extends Component {
     else {
       /* If everything is already loaded */
       return (
-        <WelcomeScreen />
+        <GameStackNavigator />
       );
     }
   }
